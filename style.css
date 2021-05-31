@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  background-color: hsl(0, 0%, 95%);
+  display: grid;
+  place-items: center;
+  font-family: "Lexend Deca", sans-serif;
+  margin: 150px 10%;
+}
+
+.container {
+  max-width: 930px;
+  color: hsl(0, 0%, 95%);
+  border-radius: 10px;
+  overflow: hidden;
+
+  margin: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 0 45px;
+}
+
+.card .image {
+  margin: 40px 0 20px;
+}
+
+.card h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+  margin: 20px 0;
+  letter-spacing: 2px;
+  font-size: 2.1rem;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  margin: 40px 0;
+  line-height: 2;
+  min-width: 200px;
+}
+
+.card button {
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  margin: 20px 0 40px;
+  border: none;
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.card button:hover {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  transition: 0.25s;
+}
+
+.sedans-btn {
+  color: hsl(31, 77%, 52%);
+}
+
+.suvs-btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.luxury-btn {
+  color: hsl(179, 100%, 13%);
+}
+
+@media (max-width: 920px) {
+  .card {
+    /* width: 250px; */
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    display: content;
+  }
+
+  .container {
+    flex-direction: column;
+    margin: 100px auto;
+    width: 60%;
+    min-width: 325px;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .card p {
+    margin: 20px 0;
+  }
+}
